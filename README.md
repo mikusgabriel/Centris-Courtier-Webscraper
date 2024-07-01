@@ -1,23 +1,25 @@
-Anonimous Broker version does not include brokers emails.
 
-Emails Broker version does include the brokers emails.
+## This project involves scraping broker information from a website that requires login. There are two versions of the scraper:
 
-
-
-
-To try the Emails version you need to get your cookies and headers:
-
-  -Note that you need to be a registered broker with an account.
-
-  Follow this guide:
-  
-  (second answer- Instead of using the first network request, use the Search request that pops up clicking the 'Répertoire' button)
-  https://stackoverflow.com/questions/23102833/how-to-scrape-a-website-which-requires-login-using-python-and-beautifulsoup
-
-  Copy your information into the already made variables in the Emails version and run the code.
+1. **Anonymous Broker Version**: This version scrapes broker information without emails.
+2. **Emails Broker Version**: This version scrapes broker information including emails, requiring user authentication.
 
 
-Time to run:
-  -Anonimous version takes ~6 minutes.
 
-  -Emails version takes a bit less than 2 hours.
+## Anonymous Broker Version
+  This version scrapes broker information excluding emails. It runs relatively fast, taking approximately 6 minutes to complete.
+    
+  ### Run the script using Python:
+    python brokersAsAnon.py
+
+
+## Emails Broker Version
+  This version scrapes broker information including emails. It requires user authentication and takes about 2 hours to complete.
+
+  ### Obtaining Cookies and Headers
+  Follow the [guide](https://stackoverflow.com/questions/23102833/how-to-scrape-a-website-which-requires-login-using-python-and-beautifulsoup) on StackOverflow to obtain your cookies and headers.
+  Use the "Search" request that appears when you click the 'Répertoire' button, instead of the first network request mentioned in the guide.
+  Copy your cookies and headers information into the predefined variables in the script.
+    
+  ### Preparing the Script
+    python brokersWithEmails.py
